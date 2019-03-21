@@ -12,8 +12,8 @@ import { ErrorsModule } from './errors/errors.module';
   ],
   imports: [
     BrowserModule,
-    PhotosModule,
     AppRoutingModule,
+    PhotosModule,
     ErrorsModule
   ],
   providers: [],
