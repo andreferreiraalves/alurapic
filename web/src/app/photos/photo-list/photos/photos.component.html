@@ -6,9 +6,11 @@
   <li *ngFor="let cols of rows" class="row no-gutters">
     <div *ngFor="let photo of cols" class="col-4" apDarkenOnHover>
 
-      <ap-card>
-        <ap-photo [url]="photo.url" [description]="photo.description"></ap-photo>
-      </ap-card>
+      <a [routerLink]="['/p', photo.id]">
+        <ap-card>
+          <ap-photo [url]="photo.url" [description]="photo.description"></ap-photo>
+        </ap-card>
+      </a>
 
       <div class="text-center">
         <i aria-hidden="true" class="fa fa-heart-o fa-1x mr-2"></i>{{ photo.likes }}

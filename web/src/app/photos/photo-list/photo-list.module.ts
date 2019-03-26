@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { FilterByDescriptionPipe } from './filter-by-description.pipe';
 import { PhotoListComponent } from './photo-list.component';
@@ -22,7 +23,8 @@ import { DarkOnHoverModule } from 'src/app/shared/directives/darken-on-hover/dar
         CommonModule,
         PhotoModule,
         CardModule,
-        DarkOnHoverModule
+        DarkOnHoverModule,
+        RouterModule
     ]
 })
 export class PhotoListModule {
